@@ -33,6 +33,10 @@
     margin-bottom: 20px;
     width: 100%;
   }
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    width: 450px;
+    margin-bottom: 20px;
+  }
 }
 
 .footer-form__btn {
@@ -50,6 +54,11 @@
   @include font-w_font-s_line-h_letter-sp(700, 16px, 1.87, 0.06em);
   align-items: center;
   cursor: pointer;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .footer-form__icon {

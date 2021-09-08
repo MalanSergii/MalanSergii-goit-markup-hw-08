@@ -34,6 +34,9 @@
 
 .projects-list__link {
   transition: box-shadow $transition-duration $timing-function;
+  // @media screen and (min: width:768px) and (max-width: 1199px) {
+  //   height: 100%;
+  // }
 
   &:hover,
   &:focus {
@@ -48,6 +51,7 @@
 }
 
 .projects-list__overlay {
+  text-align: left;
   position: absolute;
   top: 0;
   left: 0;
@@ -84,10 +88,15 @@
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 354px;
-    height: 140px;
+    height: 100%;
   }
   @media screen and (min-width: 1200px) {
     width: 370px;
+  }
+}
+@media screen and(min-width:768px) and(max-width:1199px) {
+  .first {
+    padding-bottom: 56px;
   }
 }
 

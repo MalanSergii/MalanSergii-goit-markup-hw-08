@@ -11,6 +11,9 @@
   text-transform: uppercase;
   color: $third-color;
   margin-bottom: 20px;
+  @media screen and(min-width:1200px) {
+    text-align: left;
+  }
 }
 
 .social-links__list {

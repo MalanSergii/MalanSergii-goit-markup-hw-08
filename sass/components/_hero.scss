@@ -90,7 +90,7 @@
 }
 
 .hero__button {
-  // display: block;
+  display: block;
   font-family: $font-family-main;
   @include font-w_font-s_line-h_letter-sp(700, 16px, 1.87, 00.06em);
   color: $third-color;

@@ -66,7 +66,6 @@ button {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -386,6 +385,7 @@ button {
 }
 
 .hero__button {
+  display: block;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -751,6 +751,12 @@ button {
   margin-bottom: 0;
 }
 
+@media (max-width: 767px) {
+  .specials__text {
+    margin-bottom: 30px;
+  }
+}
+
 .our-job {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -810,6 +816,7 @@ button {
 .our-team {
   background: #f5f4fa;
   padding: 94px 0;
+  min-width: 480px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1121,6 +1128,7 @@ button {
 @media screen and (min-width: 1200px) {
   .footer__info {
     margin-right: 93px;
+    text-align: left;
   }
 }
 
@@ -1175,6 +1183,12 @@ button {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-links__title {
+    text-align: left;
+  }
 }
 
 .social-links__list {
@@ -1306,6 +1320,13 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form__email {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
+
 .footer-form__btn {
   position: relative;
   display: inline-block;
@@ -1327,6 +1348,14 @@ button {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form__btn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .footer-form__icon {
@@ -1485,6 +1514,7 @@ button {
 }
 
 .projects-list__overlay {
+  text-align: left;
   position: absolute;
   top: 0;
   left: 0;
@@ -1537,13 +1567,19 @@ button {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .projects-list__context {
     width: 354px;
-    height: 140px;
+    height: 100%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .projects-list__context {
     width: 370px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .first {
+    padding-bottom: 56px;
   }
 }
 

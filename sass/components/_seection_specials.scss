@@ -69,4 +69,7 @@
   @include font-w_font-s_line-h_letter-sp(400, 14px, 1.71);
   color: $second-color;
   margin-bottom: 0;
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
