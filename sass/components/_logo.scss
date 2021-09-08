@@ -1,0 +1,24 @@
+.logo {
+  display: inline-block;
+  font-family: $font-family-sec;
+  @include font-w_font-s_line-h_letter-sp(700, 26px, 1.19);
+  font-style: normal;
+  color: $active-color;
+  padding: 16px 0;
+  @media screen and(max-width:767px) {
+    margin-right: auto;
+  }
+
+  @media screen and(max-width:1199px) {
+    @include font-w_font-s_line-h_letter-sp(700, 24px, 1.16);
+  }
+}
+/* ____ logo second part */
+// header
+.logo--dark {
+  color: $accent-color;
+}
+// footer
+.logo--white {
+  color: $third-color;
+}

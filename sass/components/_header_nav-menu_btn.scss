@@ -1,0 +1,11 @@
+.nav-menu__btn {
+  margin-left: auto;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $active-color;
+  }
+}

@@ -1,0 +1,112 @@
+.hero {
+  background: $hero-footer-bgcolor;
+  // text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #c4c4c4;
+  max-width: 1600px;
+  max-height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @media screen and (max-width: 767px) {
+    padding: 118px 0;
+    min-width: 480px;
+    max-height: 400px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/main-paige/hero/hero-mobile.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    (min-resolution: 192dpi) and (max-width: 767px),
+    (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/main-paige/hero/hero-mobile@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 118px 0;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/main-paige/hero/hero-tablet.jpg);
+  }
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/main-paige/hero/hero-tablet@2x.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/main-paige/hero/hero-desctop.jpg);
+  }
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) and (min-width: 1200px),
+    (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/main-paige/hero/hero-desctop@2x.jpg);
+  }
+}
+
+.hero__title {
+  @include font-w_font-s_line-h_letter-sp(900, 44px, 1.36, 0.06em);
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  color: $third-color;
+  margin-bottom: 30px;
+  text-align: center;
+
+  @media screen and(max-width:1199px) {
+    // box-sizing: content-box;
+  }
+
+  @media screen and (max-width: 1199px) {
+    @include font-w_font-s_line-h_letter-sp(900, 26px, 1.36, 0.06em);
+    max-width: 360px;
+  }
+}
+
+.hero__button {
+  // display: block;
+  font-family: $font-family-main;
+  @include font-w_font-s_line-h_letter-sp(700, 16px, 1.87, 00.06em);
+  color: $third-color;
+  background: $active-color;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  transition: background $transition-duration $timing-function;
+  margin-right: auto;
+  margin-left: auto;
+
+  &:hover,
+  &:focus {
+    background: $btn_bgcolor_on_focus-hov;
+    color: $third-color;
+  }
+}

@@ -1,0 +1,39 @@
+body {
+  font-family: $font-family-main;
+}
+img {
+  display: block;
+  width: 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+.link {
+  /* remove all decoration from links */
+  display: block;
+  text-decoration: none;
+}
+.list {
+  /* remove all markrers from ul */
+  list-style: none;
+}
+.card {
+  /* фон карточки*/
+  background: $third-color;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+}

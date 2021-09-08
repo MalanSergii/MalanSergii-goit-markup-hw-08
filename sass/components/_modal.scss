@@ -1,0 +1,78 @@
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+
+  background: $third-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+.modal__title {
+  @include font-w_font-s_line-h_letter-sp(700, 20px, 1.15);
+  text-align: center;
+  color: $accent-color;
+  margin-bottom: 12px;
+}
+
+.modal__user-info {
+  position: relative;
+  display: block;
+}
+
+.modal__text {
+  display: block;
+  text-align: left;
+  margin-bottom: 4px;
+  @include font-w_font-s_line-h_letter-sp(400, 12px, 1.16, 0.01em);
+  color: $second-color;
+}
+
+.modal__form {
+  outline: none;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 12px 12px 42px;
+  transition: border $transition-duration $timing-function;
+
+  &:focus {
+    border: 1px solid $active-color;
+  }
+}
+
+.modal__icon {
+  position: absolute;
+  top: 28px;
+  left: 15px;
+  transition: fill $transition-duration $timing-function;
+
+  .modal__form:focus + & {
+    fill: $active-color;
+  }
+}
+
+.modal__textarea {
+  resize: none;
+  height: 120px;
+  margin-bottom: 20px;
+  padding: 12px;
+
+  &::placeholder {
+    @include font-w_font-s_line-h_letter-sp(400, 12px, 1.16, 00.01em);
+    color: $modal-te-ph;
+  }
+}
